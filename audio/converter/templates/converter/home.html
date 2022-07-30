@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<style>
+    .cen{
+        text-align: center;
+    }
+    .btn1{
+        position: absolute;
+        left: 35%;
+        top:50%;
+    }
+    .btn2{
+        position: absolute;
+        left: 55%;
+        top:50%;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" style="height: 18rem; margin-top: 50px;">
+            <div class="card-body">
+                <h5 class="card-title cen">AUDIO/TEXT CONVERTER</h5>
+                <h6 class="card-subtitle mb-2 text-muted cen">Django</h6>
+                <p class="card-text cen">Choose Your Action.</p>
+                <a href="{% url 'converter:txt2v' %}"><button class="btn btn-outline-dark btn1">Text To Audio</button></a>
+                <a href="{% url 'converter:v2txt' %}"><button class="btn btn-outline-dark btn2">Audio To Text</button></a>
+              </div>
+        </div>
+    </div>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
